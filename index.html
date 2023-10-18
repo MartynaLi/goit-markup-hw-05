@@ -29,7 +29,9 @@
           >
           <ul class="list flex-nav">
             <li>
-              <a class="link link-nav flex-nav-li" href="./index.html"
+              <a
+                class="link link-nav flex-nav-li studio-active"
+                href="./index.html"
                 >Studio</a
               >
             </li>
@@ -63,7 +65,7 @@
         <div class="container">
           <h1 class="header-one">Effective Solutions for Your Business</h1>
 
-          <button type="button" class="filter-button-main">
+          <button type="button" data-modal-open class="filter-button-main">
             Order Service
           </button>
         </div>
@@ -427,6 +429,15 @@
         </div>
       </div>
     </footer>
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-windows">
+        <button type="button" class="modal-windows-close" data-modal-close>
+          <svg class="modal-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
